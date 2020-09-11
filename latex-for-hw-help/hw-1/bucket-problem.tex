@@ -1,0 +1,22 @@
+\documentclass{article}
+
+\begin{document}
+
+\section*{Bucket problem}
+
+I started with the change in potential energy for a change in height $\Delta h$:
+$$ \Delta PE = \rho * g * A * h^2 - \rho * g * A * (h - \Delta h)^2 = \rho * g * A (h^2 - (h^2 - 2 * h * \Delta h + \Delta h^2))$$
+We can simplify $\Delta PE$ to
+$$ \Delta PE = \rho * g * A (2* h* \Delta h + \Delta h^2) $$
+From here, we can note that the change in potential energy is equal to the kinetic energy leaving the bucket:
+$$ KE = (1/2) * \rho * A * \Delta h * v^2 $$
+Then, setting $\Delta PE = KE$, we get
+$$ \rho * g * A (2* h* \Delta h + \Delta h^2) = (1/2) * \rho * A * \Delta h * v^2 $$
+$$ 2 * g * h* \Delta h + g * \Delta h^2 = (1/2)*\Delta h * v^2 $$
+$$ 4 * g * h + g * \Delta h = v^2 $$
+As we let $\Delta h$ approach 0, we just get
+$$ v^2 = 4*g*h $$
+I can't seem to find where I went wrong, let me know what you see.
+Thanks Tomas!
+
+\end{document}
