@@ -8,8 +8,8 @@
 
 function v_field_2d(normalize, scale)
     % define x and y ranges
-    xrange = [-25, 25];
-    yrange = [-25, 25];
+    xrange = [-5, 5];
+    yrange = [-5, 5];
     % how many sample points to get from the range
     sample = 20;
     xstep = abs(xrange(1)-xrange(2))/sample;
@@ -35,11 +35,11 @@ function v_field_2d(normalize, scale)
 end
 
 function vals = f(x, y)
-    vals = 5.*x + 2.*y;
+    vals = x.*y -1;
 end
 
 function vals = g(x, y)
-    vals = -17.*x + -5.*y;
+    vals = x-y.^3;
 end
 
 function [xhat, yhat] = unit(xdot, ydot)
